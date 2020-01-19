@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+django_geolocation_fields.egg-info/PKG-INFO
+django_geolocation_fields.egg-info/SOURCES.txt
+django_geolocation_fields.egg-info/dependency_links.txt
+django_geolocation_fields.egg-info/top_level.txt
+forms/__init__.py
+migrations/__init__.py
+models/__init__.py
+models/base.py
