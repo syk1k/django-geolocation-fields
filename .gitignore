@@ -1,2 +1,15 @@
 .vscode
+.DS_Store
+.venv
+.eggs
+.tox
+
+*.pyc
+
+# pypi specific
+MANIFEST
 dist
+build
+
+# Docs
+docs/build
