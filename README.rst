@@ -9,6 +9,8 @@ Detailed documentation is in the "docs" directory.
 Quick start
 -----------
 
+The project is still in development
+
 1. Add "geolocation_fields" to your INSTALLED_APPS setting like this::
 
     INSTALLED_APPS = [
