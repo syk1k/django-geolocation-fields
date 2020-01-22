@@ -15,3 +15,6 @@ build
 
 # Docs
 docs/build
+
+interface.rst
+samples
