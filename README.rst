@@ -1,6 +1,6 @@
-=====
 django-geolocation-fields
-=====
+-------------------------
+
 
 This a Django app to facilitate the manipulation of Geolocation objects in a GeoDjango app without using a spatial database.
 
@@ -13,7 +13,7 @@ The project is still in development
 
 Here is an example that uses it https://github.com/syk1k/django-geolocation
 
-1. Add "geolocation_fields" to your INSTALLED_APPS setting like this::
+1. Add "geolocation_fields" to your INSTALLED_APPS setting like this:
 
     INSTALLED_APPS = [
         ...
