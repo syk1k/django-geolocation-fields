@@ -12,11 +12,12 @@ The project is still in development
 Here is an example that uses it https://github.com/syk1k/django-geolocation
 
 1. Add "geolocation_fields" to your INSTALLED_APPS setting like this:
-
+    ```python
     INSTALLED_APPS = [
-        ...
+        #...
         'geolocation_fields',
     ]
+    ```
 
 2. Add a PointField to a model:
     ```python
