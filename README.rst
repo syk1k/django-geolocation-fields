@@ -11,6 +11,8 @@ Quick start
 
 The project is still in development
 
+Here is an example that uses it https://github.com/syk1k/django-geolocation
+
 1. Add "geolocation_fields" to your INSTALLED_APPS setting like this::
 
     INSTALLED_APPS = [
