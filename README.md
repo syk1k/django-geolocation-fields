@@ -1,7 +1,5 @@
 django-geolocation-fields
 -------------------------
-
-
 A Django app to facilitate the manipulation of Geolocation objects in a GeoDjango app without using a spatial database.
 
 Detailed documentation is in the "docs" directory.
@@ -20,6 +18,8 @@ Here is an example that uses it https://github.com/syk1k/django-geolocation
         'geolocation_fields',
     ]
 
-2. Add a PointField to a model
-    from geolocation_fields.models import fields  <br/>
+2. Add a PointField to a model:
+    ```python
+    from geolocation_fields.models import fields
     field_name = fields.PointField(verbose_name='field_name')
+    ```
