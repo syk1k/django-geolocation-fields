@@ -1,11 +1,11 @@
 import setuptools
 
-with open("README.rst", "r") as fh:
+with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
     name="django-geolocation-fields", # Replace with your own username
-    version="0.1.dev2",
+    version="0.1.dev3",
     author="GOUNTENI DAMBE TCHIMBIANDJA",
     author_email="dambemondo@gmail.com",
     description="A Django app to work with geolocation fields without a spatial database.",
