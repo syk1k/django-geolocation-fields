@@ -19,3 +19,10 @@ Here is an example that uses it https://github.com/syk1k/django-geolocation
         ...
         'geolocation_fields',
     ]
+
+2. Add a PointField to a model
+
+    from geolocation_fields.models import fields
+
+    ...
+    <field_name> = fields.PointField(verbose_name='<field_name>')
