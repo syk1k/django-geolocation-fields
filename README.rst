@@ -2,7 +2,7 @@ django-geolocation-fields
 -------------------------
 
 
-This a Django app to facilitate the manipulation of Geolocation objects in a GeoDjango app without using a spatial database.
+A Django app to facilitate the manipulation of Geolocation objects in a GeoDjango app without using a spatial database.
 
 Detailed documentation is in the "docs" directory.
 

@@ -5,7 +5,7 @@ with open("README.rst", "r") as fh:
 
 setuptools.setup(
     name="django-geolocation-fields", # Replace with your own username
-    version="0.1.0",
+    version="0.1.dev0",
     author="GOUNTENI DAMBE TCHIMBIANDJA",
     author_email="dambemondo@gmail.com",
     description="A Django app to work with geolocation fields without a spatial database.",
@@ -13,6 +13,9 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     url="https://github.com/syk1k/django-geolocation-fields",
     packages=setuptools.find_packages(),
+    install_requires=[
+        'Django>=2.0',
+    ],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
