@@ -1,4 +1,6 @@
 {% load static %}
+
+<link rel="stylesheet" href="{% static 'leaflet/leaflet.css' %}">
 <input 
     type="{{ widget.type }}" 
     name="{{ widget.name }}"
@@ -16,4 +18,6 @@
 </script>
 
 <script src="{% static 'vendor/jquery-2.2.4.min.js' %}"></script>
+<script src="{% static 'leaflte/leaflet.js' %}"></script>
+
 <script src="{% static 'widgets/point.js' %}"></script>
