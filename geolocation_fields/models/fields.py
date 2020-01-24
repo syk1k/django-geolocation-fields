@@ -6,7 +6,7 @@ from geolocation_fields.models import base
 from geolocation_fields.forms import fields
 
 
-class PointField(models.Field):
+class PointField(models.CharField):
     def __init__(self, *args, **kwargs):
         kwargs['max_length'] = 104
         super().__init__(*args, **kwargs)
