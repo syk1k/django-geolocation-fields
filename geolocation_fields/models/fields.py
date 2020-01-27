@@ -4,6 +4,7 @@ This file holds all our Geometric fields
 from django.db import models
 from geolocation_fields.models import base
 from geolocation_fields.forms import fields
+from django.template import Context
 
 
 class PointField(models.Field):

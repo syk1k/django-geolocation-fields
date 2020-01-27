@@ -9,6 +9,7 @@
         value="{{ widget.value|stringformat:'s' }}"
     {% endif %}
     {% include "django/forms/widgets/attrs.html" %}
+
 >
 
 <div class="map_container">
@@ -21,6 +22,11 @@
 <script>
     let input_widget = "{{widget.name}}"
     let map_attributions = "{{map_attributions}}"
+    let the_value = "{{point_value}}";
+    console.log(the_value);
+    if(the_value){
+        var point_value = JSON.parse(the_value);
+    }
 
     var map = L.map('{{widget.name}}_map', {
         center: [6.1720, 1.2263], // Default center to lome

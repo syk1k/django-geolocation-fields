@@ -6,7 +6,9 @@ class PointWidget(widgets.Input):
     template_name = 'widgets/point.html'
 
     def get_context(self, name, value, attrs):
-        print(GEOLOCATION_FIELD)
+        print(value)
         context = super().get_context(name, value, attrs)
         context['provider'] = GEOLOCATION_FIELD['provider']
+        if value:
+            context['point_value'] = value
         return context
