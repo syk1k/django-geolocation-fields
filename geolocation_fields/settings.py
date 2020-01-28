@@ -20,3 +20,9 @@ except:
         "center" : [0,0],
         "zoom": 12,
     }
+
+# Admin configurations
+
+GEOLOCATION_ADMIN = {
+    'display_input': False,
+}

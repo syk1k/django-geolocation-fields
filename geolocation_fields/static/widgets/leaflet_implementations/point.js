@@ -20,12 +20,8 @@ $(document).ready(()=>{
     map.setView(marker_value)
     
 
-    marker.on('dragend', (event)=>{
+    marker.on('dragend', ()=>{
         point_field.val(`[${marker.getLatLng().lat}, ${marker.getLatLng().lng}]`)
     });
     
-
-    point_field.change((event)=>{
-        console.log(event)
-    });
 });
