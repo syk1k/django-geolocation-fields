@@ -53,7 +53,9 @@ Screenshots
 -----------
 
 1. With the input field displayed
-    [!with_input](./images/leaflet_map_with_input.png)
+
+[!with_input](./images/leaflet_map_with_input.png)
 
 2. Without input field
-    [!without_input](./images/leaflet_map_without_input.png)
+
+[!without_input](./images/leaflet_map_without_input.png)
