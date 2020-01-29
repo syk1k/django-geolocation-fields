@@ -38,7 +38,7 @@ Here is an example that uses it https://github.com/syk1k/django-geolocation
 
     This version of the package integrate leaflet only.
     Here is the default configuration for the fields (PointField for the moment).
-    The configurations uses leaflet Map options. Check the leafletJS <a href="https://leafletjs.com/">doc here</a>
+    The configurations uses leaflet Map options. Check the leafletJS
     ```python
     GEOLOCATION_FIELD = {
         "provider": "leaflet", # Two provider: Leaflet, Mapbox
