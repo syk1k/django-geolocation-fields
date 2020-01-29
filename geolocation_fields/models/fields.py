@@ -2,9 +2,11 @@
 This file holds all our Geometric fields
 """
 from django.db import models
-from geolocation_fields.models import base
-from geolocation_fields.forms import fields
 from django.template import Context
+
+from geolocation_fields.models import base, values_checks
+from geolocation_fields.forms import fields
+
 
 
 class PointField(models.Field):
@@ -33,3 +35,8 @@ class PointField(models.Field):
         defaults = {'form_class': fields.PointField}
         defaults.update(kwargs)
         return super().formfield(**defaults)
+
+    
+    def validate(self, value, model_instance):
+        values_checks.point_check(value)
+        super().validate(value, model_instance)
