@@ -1,6 +1,7 @@
 $(document).ready(()=>{
     var attribution = map_attributions;
     var point_field = $(`#id_${input_widget}`);
+    var point_display = $('#point_display');
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -22,6 +23,7 @@ $(document).ready(()=>{
 
     marker.on('dragend', ()=>{
         point_field.val(`[${marker.getLatLng().lat}, ${marker.getLatLng().lng}]`)
+        point_display.html(`[${marker.getLatLng().lat}, ${marker.getLatLng().lng}]`)
     });
     
 });

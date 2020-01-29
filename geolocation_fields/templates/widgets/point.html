@@ -2,6 +2,8 @@
 
 <link rel="stylesheet" href="{% static 'leaflet/leaflet.css' %}">
 <link rel="stylesheet" href="{% static 'widgets/css/point.css' %}">
+
+
 <input 
     type="{{ widget.type }}" 
     name="{{ widget.name }}"
@@ -10,7 +12,20 @@
     {% endif %}
     {% include "django/forms/widgets/attrs.html" %}
 
+    {% if display_input %}
+
+    {% else %}
+        hidden
+    {% endif %}
+
 >
+
+{% if display_input %}
+{% else %}
+    <div>
+        <span id='point_display'>{{point_value}}</span>
+    </div>
+{% endif %}
 
 <div class="map_container">
     <div id="{{widget.name}}_map" class="map"></div>
