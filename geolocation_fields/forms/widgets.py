@@ -8,7 +8,7 @@ class PointWidget(widgets.Input):
     def get_context(self, name, value, attrs):
         context = super().get_context(name, value, attrs)
         context['provider'] = GEOLOCATION_FIELD['provider']
-        context['display_input'] = GEOLOCATION_ADMIN['display_input']
+        context['display_input'] = GEOLOCATION_FIELD['display_input']
         if value:
             context['point_value'] = value
         return context
