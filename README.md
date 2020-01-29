@@ -47,3 +47,13 @@ Here is an example that uses it https://github.com/syk1k/django-geolocation
         "zoom": 12,
         'display_input': False,
     }
+
+
+Screenshots
+-----------
+
+1. With the input field displayed
+    [!with_input]('./images/leaflet_map_with_input.png')
+
+2. Without input field
+    [!without_input]('./images/leaflet_map_without_input.png')
