@@ -31,7 +31,7 @@ Here is an example that uses it https://github.com/syk1k/django-geolocation
     By default the PointField's widget only display the map, 
     you can also chose to display the editable input field in the settings
     ```python
-    GEOLOCATION_FIELD = {
+    GEOLOCATION_FIELDS = {
         'display_input': True, # Display the input field. False to remove
     }
     ```
@@ -41,7 +41,7 @@ Here is an example that uses it https://github.com/syk1k/django-geolocation
     The configurations uses leaflet Map options. Check the leafletJS 
     [doc here](https://leafletjs.com/)
     ```python
-    GEOLOCATION_FIELD = {
+    GEOLOCATION_FIELDS = {
         "provider": "leaflet", # Two provider: Leaflet, Mapbox
         "center" : [0,0],
         "zoom": 12,
