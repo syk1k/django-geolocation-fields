@@ -7,6 +7,11 @@ Detailed documentation is in the "docs" directory.
 Quick start
 -----------
 
+```bash
+$ pip install django-geolocation-fields
+```
+
+
 The project is still in development
 
 Here is an example that uses it https://github.com/syk1k/django-geolocation
