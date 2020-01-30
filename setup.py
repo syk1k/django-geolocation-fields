@@ -5,7 +5,7 @@ with open("PypiReadme.md", "r") as fh:
 
 setuptools.setup(
     name="django-geolocation-fields", # Replace with your own username
-    version="0.1.5.post2",
+    version="0.1.6",
     author="GOUNTENI DAMBE TCHIMBIANDJA",
     author_email="dambemondo@gmail.com",
     description="A Django app to work with geolocation fields without a spatial database.",
