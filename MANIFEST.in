@@ -1,7 +1,8 @@
 django-geolocation/MANIFEST.in
 
 include LICENSE
-include README.rst
+include README.md
+include PypiReadme.md
 recursive-include geolocation_fields/static *
 recursive-include geolocation_fields/templates *
 recursive-include geolocation_fields/forms *

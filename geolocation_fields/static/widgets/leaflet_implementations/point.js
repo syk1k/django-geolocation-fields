@@ -12,6 +12,8 @@ $(document).ready(()=>{
     var marker_value;
     if(point_value){
         marker_value = point_value;        
+    }else if(map_center_marker){
+        marker_value = map_center_marker;
     }else{
         marker_value = [0,0]
     }
