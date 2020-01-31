@@ -2,6 +2,7 @@
 
 <link rel="stylesheet" href="{% static 'leaflet/leaflet.css' %}">
 <link rel="stylesheet" href="{% static 'widgets/css/point.css' %}">
+<link rel="stylesheet" href="{% static 'vendor/fontawesome.5.12.0/css/all.css' %}">
 
 <textarea 
     name="{{ widget.name }}"
@@ -13,6 +14,8 @@
 <div class="map_container">
     <div id="{{widget.name}}_map" class="map"></div>
 </div>
+
+{% include "./map_control/control.html" %}
 
 <script src="{% static 'vendor/jquery-2.2.4.min.js' %}"></script>
 <script src="{% static 'leaflet/leaflet.js' %}"></script>
