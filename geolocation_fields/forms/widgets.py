@@ -10,6 +10,7 @@ class PointWidget(widgets.Input):
         context['provider'] = GEOLOCATION_FIELDS['provider']
         context['display_input'] = GEOLOCATION_FIELDS['display_input']
         context['center'] = GEOLOCATION_FIELDS['center']
+        context['dragging'] = GEOLOCATION_FIELDS['dragging']
         if value:
             context['point_value'] = value
         return context
