@@ -4,6 +4,10 @@ A Django app to facilitate the manipulation of Geolocation objects in a GeoDjang
 
 Detailed documentation is in the "docs" directory.
 
+Status
+------
+[![Build Status](https://travis-ci.org/syk1k/django-geolocation-fields.svg?branch=master)](https://travis-ci.org/syk1k/django-geolocation-fields)
+
 Quick start
 -----------
 
