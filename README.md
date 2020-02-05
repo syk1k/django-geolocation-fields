@@ -4,7 +4,7 @@ A Django app to facilitate the manipulation of Geolocation objects in a GeoDjang
 
 Detailed documentation is in the "docs" directory.
 
-**Stable version:** [django-geolocation-fields==0.1.7](https://pypi.org/project/django-geolocation-fields/)  
+**Stable version:** [django-geolocation-fields==0.1.8](https://pypi.org/project/django-geolocation-fields/)  
 **Documentation:** [django-geolocation-fields](https://django-geolocation-fields.readthedocs.io/en/latest/)  
 **Licence:** MIT  
 

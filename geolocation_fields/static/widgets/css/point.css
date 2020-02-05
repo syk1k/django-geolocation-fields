@@ -1,6 +1,9 @@
 .map { 
     height: 200px;
     margin-top: 10px;
+    resize: both;
+  	overflow: scroll;
+	overflow-x: hidden;
 }
 
 .map_container {
