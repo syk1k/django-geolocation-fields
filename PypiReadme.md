@@ -16,10 +16,11 @@ The project is still in development
 Here is an example that uses it https://github.com/syk1k/django-geolocation
 
 Add "geolocation_fields" to your INSTALLED_APPS setting like this:
-    ```python
-    INSTALLED_APPS = [
-        #...
-        'geolocation_fields',
-    ]
-    ```
+```python
+INSTALLED_APPS = [
+    #...
+    'geolocation_fields',
+]
+```
+
 [Documentation page](https://django-geolocation-fields.readthedocs.io/en/latest/)

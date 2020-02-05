@@ -40,3 +40,20 @@ class PointField(models.Field):
     def validate(self, value, model_instance):
         values_checks.point_check(value)
         super().validate(value, model_instance)
+
+
+class PolygonField(models.Field):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+
+    
+    def get_internal_type(self):
+        return "TextField"
+
+
+    def formfield(self, **kwargs):
+        # This is a fairly standard way to set up some defaults
+        # while letting the caller override them.
+        defaults = {'form_class': fields.PolygonField}
+        defaults.update(kwargs)
+        return super().formfield(**defaults)
