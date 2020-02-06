@@ -13,6 +13,11 @@ Status
 ------
 [![Build Status](https://travis-ci.org/syk1k/django-geolocation-fields.svg?branch=master)](https://travis-ci.org/syk1k/django-geolocation-fields)
 
+
+Important note
+--------------
+The PolygonField is not working yet, so beware
+
 Quick start
 -----------
 
