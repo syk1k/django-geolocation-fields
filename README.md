@@ -41,7 +41,12 @@ Here is an example that uses it https://github.com/syk1k/django-geolocation
 2. Add a PointField to a model:
     ```python
     from geolocation_fields.models import fields
-    field_name = fields.PointField(verbose_name='field_name')
+    from django.db import models
+    
+    class MyModels(models.Model):
+        # Some fields  
+        field_name = fields.PointField(verbose_name='field_name')
+        # Some fields
     ```
 
 3. Configurations 
