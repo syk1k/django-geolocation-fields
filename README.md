@@ -83,3 +83,17 @@ Screenshots
 2. Without input field
 
 ![without_input](./images/leaflet_map_without_input.png)
+
+
+Contributions
+-------------
+
+* Project requirements:  
+1. Django>=2 <=2.2.12
+2. Sphinx == 3.0.3 
+
+* Generate the package
+
+```bash
+$ python setup.py sdist
+```

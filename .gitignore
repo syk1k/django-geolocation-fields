@@ -18,3 +18,5 @@ docs/build
 
 interface.rst
 samples
+requirements.txt
+loca*.*
