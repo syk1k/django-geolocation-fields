@@ -18,6 +18,13 @@ Important note
 --------------
 The PolygonField is not working yet, so beware
 
+Geometry Types
+--------------
+Normaly the package will support all GeoJSON geometry types
+GeoJSON supports the following geometry types: Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygon, and GeometryCollection. Features in GeoJSON contain a Geometry object and additional properties, and a FeatureCollection contains a list of Features.  
+
+But for now, it only supports Point (PointField)
+
 Quick start
 -----------
 
