@@ -1,4 +1,4 @@
-$(document).ready(()=>{
+$(document).ready(() => {
     var attribution = polygon_map_attributions;
     var polygon_field = $(`#id_${polygon_input_widget}`)
 
@@ -8,18 +8,18 @@ $(document).ready(()=>{
 
 
     // Polygone test
-    var polygon = L.polygon([
-        [6.17357,1.21276],
+    /* var polygon = L.polygon([
+        [6.17357, 1.21276],
         [6.17375, 1.21395],
         [6.17292, 1.21390]
-    ]).addTo(polygon_map);
+    ]).addTo(polygon_map); */
 
-    
 
-    polygon.on('click', ()=>{
+
+    polygon.on('click', () => {
         polygonToArray = []
         polygonLatLng = polygon.getLatLngs()[0];
-        
+
         polygonLatLng.forEach(corner => {
             console.log(corner)
             polygonToArray.push(`[ ${corner.lat}, ${corner.lng}]`)
@@ -27,21 +27,43 @@ $(document).ready(()=>{
 
         polygon_field.val(`[${polygonToArray}]`)
     })
-    
-    
-    // Icontrol for Polygon creation
 
-    class MapManageControl extends L.Control{
-        htmlElement = document.createElement('div');
-        
-        onAdd = (map) =>{
-            this.htmlElement.className = 'map_manage_control leaflet-control-container';
-            this.htmlElement.appendChild(document.querySelector("#map_manage_control"));
-            return this.htmlElement
+    L.EditControl = L.Control.extend({
+
+        options: {
+            position: 'topleft',
+            callback: null,
+            kind: '',
+            html: ''
+        },
+
+        onAdd: function(map) {
+            var container = L.DomUtil.create('div', 'leaflet-control leaflet-bar'),
+                link = L.DomUtil.create('a', '', container);
+
+            link.href = '#';
+            link.title = 'Create a new ' + this.options.kind;
+            link.innerHTML = this.options.html;
+            L.DomEvent.on(link, 'click', L.DomEvent.stop)
+                .on(link, 'click', function() {
+                    window.LAYER = this.options.callback.call(map.editTools);
+                }, this);
+
+            return container;
         }
-    }
 
+    });
 
-    let map_manage_control = new MapManageControl();
-    map_manage_control.addTo(polygon_map);    
+    var lineControl = L.EditControl.extend({
+        options: {
+            position: 'topleft',
+            callback: map.editTools.startPolyline,
+            kind: 'line',
+            html: '\\/\\'
+        }
+
+    });
+
+    map.addControl(lineControl);
+
 });
