@@ -15,17 +15,18 @@ $(document).ready(()=>{
     }else if(map_center_marker){
         marker_value = map_center_marker;
     }else{
-        marker_value = [0,0]
+        marker_value = [0,0];
     }
     var marker = L.marker(marker_value, {
         draggable: true,
     }).addTo(point_map);
-    point_map.setView(marker_value)
+    point_map.setView(marker_value);
     
 
     marker.on('dragend', ()=>{
-        point_field.val(`[${marker.getLatLng().lat}, ${marker.getLatLng().lng}]`)
-        point_display.html(`[${marker.getLatLng().lat}, ${marker.getLatLng().lng}]`)
+        point_field.val(`[${marker.getLatLng().lat}, ${marker.getLatLng().lng}]`);
+        point_display.html(`[${marker.getLatLng().lat}, ${marker.getLatLng().lng}]`);
+        dragend();
     });
     
 });

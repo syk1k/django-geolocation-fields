@@ -37,6 +37,8 @@
 <script src="{% static 'leaflet/leaflet.js' %}"></script>
 
 <script>
+    function dragend(){};
+    
     let point_input_widget = "{{widget.name}}"
     let point_map_attributions = "{{map_attributions}}"
     let the_value = "{{point_value}}";
